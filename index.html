@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar" id="navbar">
+        <div class="navbar-left">
+          <button>Back</button>
+          <ul>
+            <li id="highlighted">B2C</li>
+            <li>B2B Tax</li>
+            <li>B2B Supply</li>
+            <li>Manual</li>
+          </ul>
+          <button>+</button>
+        </div>
+        <div class="navbar-right">
+          <p>Bill Documentation</p>
+        </div>
+      </div>
+      <hr />
+      <div class="main flex">
+        <div class="main-left">
+          <div id="btn-container">
+            <button><u>Unit Mapped 2/175</u></button>
+            <button><u>Active Charges 7/7</u></button>
+            <button id="btn-3"><u>Reading -/2</u></button>
+          </div>
+          <div id="form">
+            <div class="flex" id="first-div">
+              <div class="flex-col" id="first">
+                <label>Billing cycle <sup>*</sup></label>
+                <select>
+                  <option value="date">NOV-21-B2C|B2C</option>
+                </select>
+                <p>Billing cycle is active</p>
+              </div>
+              <div class="flex-col" id="second">
+                <label>Cluster</label>
+                <select>
+                  <option>AMN</option>
+                </select>
+              </div>
+            </div>
+            <div class="flex" id="second-div">
+              <div class="flex-col" id="third">
+                <label>Tower</label>
+                <select>
+                  <option value="tower">Select Tower</option>
+                </select>
+              </div>
+              <div class="flex-col" id="fourth">
+                <label>Unit</label>
+                <select>
+                  <option value="unit-name">
+                    AMN0020905-Lokendra Kumar Sharma
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <input required type="text" placeholder="Remarks" id="remarks" />
+              <div class="flex" id="checkbox">
+                <input type="checkbox" /><label>Provisional bill ?</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-right">
+          <table>
+            <tr id="table-heading">
+              <th>Billing Cycle</th>
+            </tr>
+            <tr>
+              <td class="bold">Billing period FROM|TO</td>
+              <td class="small medium-bold">01 NOV 2021|30 NOV 2021</td>
+            </tr>
+            <tr>
+              <td class="bold">Bill due date</td>
+              <td class="small medium-bold">01 JAN 2022|01 JAN 2022</td>
+            </tr>
+            <tr>
+              <td class="bold">Consider Payment To</td>
+              <td class="small medium-bold">30 NOV 2021</td>
+            </tr>
+            <tr>
+              <td class="bold">Consider Meter Reading FROM|TO</td>
+              <td class="small medium-bold">01 NOV 2021|30 NOV 2021</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <footer class="flex footer">
+        <div class="left">
+          <button id="generate">Generate</button>
+          <button id="preview">Preview</button>
+          <button id="print1">Print</button>
+        </div>
+        <div class="right">
+          <button id="mail">Mail</button>
+          <button id="print2">Preview</button>
+          <button id="sms">SMS</button>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
